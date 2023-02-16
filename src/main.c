@@ -2,6 +2,9 @@
 
 int main(void) 
 {
-    menu();
+    while(1)
+    {
+        menu();
+    }
     return 0;
 }
