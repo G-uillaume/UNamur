@@ -36,6 +36,9 @@ dir:
 	@echo "Création of build directory"
 	@mkdir -p $(DIR_BUILD)
 
+start:
+	@$(DIR_BUILD)/$(TARGET_NAME)
+
 clean:
 ifeq ("$(wildcard $(DIR_BUILD))", "")
 	@echo "Previous build folder already removed"

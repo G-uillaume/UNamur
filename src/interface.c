@@ -10,6 +10,7 @@ static void display_menu(void)
     printf(".0: Add a new person\n");
     printf(".1: Display the list of persons\n");
     printf(".2: Remove a person\n");
+    printf(".3: Exit\n");
     printf("===============================\n");
     printf("Make a selection: ");
 }
@@ -34,8 +35,11 @@ void menu(void)
         remove_identity(get_information(REMOVE));
         break;
     
+    case 3:
+        exit(EXIT_SUCCESS);
+    
     default:
-        printf("Option doesn't existe !");
+        printf("Option doesn't existe !\n");
         break;
     }
 }

@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include "file_manager.h"
 
-#define FILE_NAME           "./ressources/identity_cards.txt"
 #define SEPARATOR           ","
 #define NEW_LINE            "\n"
 #define LENGHT_MAX          250
