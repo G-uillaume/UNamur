@@ -1,0 +1,29 @@
+*Rappel pointeurs:
+Ecrivez trois fonctions correspondant à ce caractéristiques:
+- une fonction main qui appelle successivement une fonction alpha et une fonction beta et affiche leur résultat
+
+- une fonction void alpha qui prend en paramètre un pointeur vers une chaine de caractère
+Elle remplit alors la chaîne par "alpha"
+
+- une fonction char * beta qui renvoie une chaine de caractères "beta"
+
+
+Allocation dynamique de la mémoire: 
+
+*Exercise 42 (syllabus de TP): Écrivez un programme qui alloue dynamiquement l’espace mémoire nécessaire pour stocker les
+nombres entiers positifs entrés par l’utilisateur en utilisant uniquement des tableaux. Le programme s’arrête
+lorsqu’un nombre strictement négatif est entré
+
+
+Liste chaînée
+
+*refaites le dernier exercice en utilisant une liste simplement chaînée
+Pour vous aider, voici un exemple de liste doublement chaînée:
+
+struct liste {
+	int donnee;
+	struct liste * precedent;
+	struct liste * suivant;
+};
+Dans cet exemple, un élément de type liste est lié à l'élément liste qui le précède et à celui qui le succède via leur pointeur.
+cela permet de "naviguer" dans les deux sens de la liste.
